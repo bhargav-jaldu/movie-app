@@ -17,7 +17,7 @@ Link: https://bhargav-jaldu.github.io/movie-app/
 
 
 
-#Techonologies used: 
+# Techonologies used: 
 1. HTML
 2. CSS
 3. JAVASCRIPT

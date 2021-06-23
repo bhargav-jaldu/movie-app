@@ -86,7 +86,7 @@ function addUpcomingVideo(videos) {
     <div>
     <button class="close"><i class="fas fa-times"></i></button>
         <div class="videos">
-        <iframe src="https://www.youtube.com/embed/${videos.key}" frameborder="0" allowfullscreen width="600px" height="300px"></iframe>
+        <iframe src="https://www.youtube.com/embed/${videos.key}" frameborder="0" allowfullscreen></iframe>
         </div>
         <div>
     `;

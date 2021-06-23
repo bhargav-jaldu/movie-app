@@ -329,7 +329,7 @@ iframe {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  min-height: 100%;
   width: 1000px;
   position: relative;
 }
@@ -391,4 +391,18 @@ iframe {
   color: red;
   border: none;
   outline: none;
+}
+
+iframe {
+  margin: 10px;
+  max-width: 600px;
+  height: 300px;
+}
+
+@media (max-width: 700px) {
+  iframe {
+    margin: 10px;
+    max-width: 400px;
+    height: 200px;
+  }
 }

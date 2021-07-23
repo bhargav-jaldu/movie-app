@@ -191,9 +191,13 @@ formEl.addEventListener('submit', (e) => {
   e.preventDefault();
 
   let inputValue = inputEl.value;
-  window.scrollBy(0, 200);
+  scrollWin(0, 400);
   fetchSearchUrl(inputValue);
 });
+
+function scrollWin(x, y) {
+  window.scrollBy(x, y);
+}
 
 async function fetchSearchUrl(value) {
   try {

@@ -195,6 +195,7 @@ formEl.addEventListener('submit', (e) => {
   bottom: 300,
   behavior: 'smooth'
   });
+  console.log("hello");
   fetchSearchUrl(inputValue);
 });
 

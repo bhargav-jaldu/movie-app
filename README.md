@@ -1,7 +1,6 @@
 # movie-app
 A simple Movie App -- Where you can watch a trailer
 
-Link: https://bhargav-jaldu.github.io/movie-app/
 
 ![image](https://user-images.githubusercontent.com/78521151/118958420-091fdb80-b97f-11eb-892d-c63a5504d34d.png)
 

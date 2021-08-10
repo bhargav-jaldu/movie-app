@@ -306,7 +306,7 @@ async function fetchBannerVideo(id) {
 function addBannerVideo(video) {
   popupContainerEl.innerHTML = `
   <div class="popup">
-  <button class="mini-btn"><i class="fas fa-minus"></i></button>
+//   <button class="mini-btn"><i class="fas fa-minus"></i></button>
   <button class="close-banner"><i class="fas fa-times"></i></button>
   <iframe src="https://www.youtube.com/embed/${video.key}" frameborder="0" class="banner-video" allowfullscreen width="600px" height="300px"></iframe>
 </div>

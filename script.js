@@ -15,7 +15,7 @@ const searchEl = document.querySelector('.search');
 
 
 
-const apiKey = '90d1e1f4b5759c0ccd7dd6a205899105'
+const apiKey = 90d1e1f4b5759c0ccd7dd6a205899105
 const popupContainerEl = document.querySelector('.pop-c');
 // api key
 // img url

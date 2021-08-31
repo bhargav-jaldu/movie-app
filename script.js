@@ -149,6 +149,7 @@ function addTopRated(results) {
   topratedImg.forEach((toprated) => {
     toprated.addEventListener('click', (e) => {
       window.scrollBy(0, 500);
+      console.log("helo");
       topratedVideoEl.classList.remove('hidden');
       topratedVideo(e.target.dataset.movieId);
     });

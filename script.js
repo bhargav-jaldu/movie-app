@@ -243,6 +243,7 @@ function addSearchMovie(results) {
   const searchImgEl = searchMovieEl.querySelectorAll('.search-img');
   searchImgEl.forEach((img) => {
     img.addEventListener('click', (e) => {
+      window.scrollBy(0, 500);
       popupContainerEl.classList.remove('hidden');
       fetchBannerVideo(e.target.dataset.movieId);
     });

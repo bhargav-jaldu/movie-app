@@ -9,7 +9,7 @@ const searchTermEl = document.querySelector('.search-term');
 const searchEl = document.querySelector('.search');
 
 const popupContainerEl = document.querySelector('.pop-c');
-
+console.log("movie-app");
 // api key
 // img url
 const imgUrl = 'https://image.tmdb.org/t/p/w500/';

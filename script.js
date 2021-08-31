@@ -8,9 +8,16 @@ const searchMovieEl = document.querySelector('.search-movies');
 const searchTermEl = document.querySelector('.search-term');
 const searchEl = document.querySelector('.search');
 
+
+
+
+
+
+
+
+
 const popupContainerEl = document.querySelector('.pop-c');
 // api key
-const apiKey = '90d1e1f4b5759c0ccd7dd6a205899105';
 // img url
 const imgUrl = 'https://image.tmdb.org/t/p/w500/';
 // video url

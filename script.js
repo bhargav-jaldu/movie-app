@@ -21,12 +21,12 @@ const popupContainerEl = document.querySelector('.pop-c');
 // img url
 const imgUrl = 'https://image.tmdb.org/t/p/w500/';
 // video url
-const videoUrl = `https://api.themoviedb.org/3/movie/560144/videos?api_key=90d1e1f4b5759c0ccd7dd6a205899105`;
+const videoUrl = `https://api.themoviedb.org/3/movie/560144/videos?api_key=${apiKey}`;
 
 // upcoming
 async function fetchupcoming() {
   const response = await fetch(
-    `https://api.themoviedb.org/3/movie/upcoming?api_key=90d1e1f4b5759c0ccd7dd6a205899105`
+    `https://api.themoviedb.org/3/movie/upcoming?api_key=${apiKey}`
   );
   const data = await response.json();
   addUpcoming(data.results);
@@ -82,7 +82,7 @@ function addUpcoming(results) {
 
 async function upcomingVideo(id) {
   const response = await fetch(
-    `https://api.themoviedb.org/3/movie/${id}/videos?api_key=90d1e1f4b5759c0ccd7dd6a205899105`
+    `https://api.themoviedb.org/3/movie/${id}/videos?api_key=${apiKey}`
   );
   const data = await response.json();
   addUpcomingVideo(data.results[0]);
@@ -111,7 +111,7 @@ function addUpcomingVideo(videos) {
 // top rated
 async function fetchtopRated() {
   const response = await fetch(
-    `https://api.themoviedb.org/3/movie/top_rated?api_key=90d1e1f4b5759c0ccd7dd6a205899105`
+    `https://api.themoviedb.org/3/movie/top_rated?api_key=${apiKey}`
   );
   const data = await response.json();
   addTopRated(data.results);
@@ -166,7 +166,7 @@ function addTopRated(results) {
 
 async function topratedVideo(id) {
   const response = await fetch(
-    `https://api.themoviedb.org/3/movie/${id}/videos?api_key=90d1e1f4b5759c0ccd7dd6a205899105`
+    `https://api.themoviedb.org/3/movie/${id}/videos?api_key=${apiKey}`
   );
   const data = await response.json();
   addtopratedVideo(data.results[0]);
@@ -209,7 +209,7 @@ formEl.addEventListener('submit', (e) => {
 async function fetchSearchUrl(value) {
   try {
     const response = await fetch(
-      `https://api.themoviedb.org/3/search/movie?api_key=90d1e1f4b5759c0ccd7dd6a205899105&query=${value}&page=1`
+      `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${value}&page=1`
     );
     const data = await response.json();
     searchTermEl.innerHTML = value;
@@ -266,7 +266,7 @@ fetchtopRatedBanner();
 
 async function fetchtopRatedBanner() {
   const response = await fetch(
-    `https://api.themoviedb.org/3/movie/upcoming?api_key=90d1e1f4b5759c0ccd7dd6a205899105`
+    `https://api.themoviedb.org/3/movie/upcoming?api_key=${apiKey}`
   );
   const data = await response.json();
   addBanner(data.results);
@@ -309,7 +309,7 @@ function addBanner(results) {
 
 async function fetchBannerVideo(id) {
   const response = await fetch(
-    `https://api.themoviedb.org/3/movie/${id}/videos?api_key=90d1e1f4b5759c0ccd7dd6a205899105`
+    `https://api.themoviedb.org/3/movie/${id}/videos?api_key=${apiKey}`
   );
   const data = await response.json();
   addBannerVideo(data.results[0]);
